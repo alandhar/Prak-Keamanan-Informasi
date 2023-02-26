@@ -1,0 +1,30 @@
+Modul 2
+
+1. Apa itu Nmap?
+Sesuai deskripsi yang berada pada terminal Nmap (Network Mapper) merupakan sebuah tool open source untuk eksplorasi dan audit keamanan jaringan. Yang dirancang untuk memeriksa jaringan besar secara cepat, meskipun ia dapat pula bekerja terhadap host tunggal.
+
+Apa fungsi dari Nmap?
+Nmap berfungsi untuk memeriksa jaringan besar secara cepat, meskipun ia dapat pula bekerja terhadap host tunggal. Nmap menggunakan paket IP raw dalam cara yang canggih untuk menentukan host mana saja yang tersedia pada jaringan, layanan (nama aplikasi dan versi) apa yang diberikan, sistem operasi (dan versinya) apa yang digunakan, apa jenis firewall/filter paket yang digunakan, dan sejumlah karakteristik lainnya.
+
+2. Port dan layanan apa yang terbuka?
+Untuk port 21/tcp menggunakan layanan ftp (file transfer protocol) yang bertugas untuk mejembatani pertukaran informasi di dalam suatu komputer melalui suatu jaringan dengan koneksi tcp (transmission control protocol).
+Port 22/tcp menggunakan layanan ssh memiliki fungsi untuk mengelola lalu-lintas transfer data yang menggunakan enkripsi.
+Port 23/tcp menggunakan layanan telnet yang memungkinkan penggunanya untuk login dan mengakses jaringan komputer lain secara remote atau jarak jauh.
+
+Software apa yang digunakan pada port yang terbuka tersebut?
+Software yang digunakan pada port 21/tcp merupakan vsftpd version 2.0.8, port 22/tcp menggunakan OpenSSH version 8.2 (protocol 2.0), dan port 23/tcp menggunakan Openwall version GNU/*/Linux telnetd.
+
+3. Berapakah alamat IP dan subnet mask dari PC host?
+Karena CyberOps Workstation pada VirtualBox diatur menggunakan jaringan NAT sehingga IP didapatkan yaitu 10.0.2.15 dengan subnet mask 24.
+
+Berapa jumlah host yang terdeteksi?
+Nmap mendeteksi terdapat 256 IP address dengan 1 host.
+
+
+Modul 3
+
+Untuk modul 3 ini jaringan pada VirtualBox saya ubah dari NAT menjadi Bridged Adapter sehingga IP Address VirtualBox pun berubah sesusai network PC yang digunakan yaitu 192.168.100.134/24. Lalu terdapat perintah sudo tcpdump -i enp0s3 –s 0 –w httpdump.pcap yang bertujuan untuk mendownload file httpdump.pcap yang nantinya filenya terletak pada folder home/analyst/. Selanjutnya masuk pada website http://www.altoromutual.com/login.jsp, altoro mutual merupakan bank gadungan yang dirancang memiliki banyak celah keamanan sehingga cocok digunakan untuk melakukan praktikum keamanan jaringan ini. 
+
+Lalu buka file httpdump.pcap yang telah didownload tadi menggunakan wireshark yang merupakan tool untuk menganalisis paket data jaringan yang melakukan pengawasan paket secara real time dan menangkap data yang akan ditampilkan selengkap mungkin. Setelah masuk ke wireshark filter file tersebut dengan http agar menampilkan protocol http saja. _____ blm selesai (6 & 7)
+
+Sama seperti sebelumnya menggunakan perintah sudo tcpdump, namun file yang didownload merupakan file https. Tujuan mengganti jaringan menjadi Bridged Adapter agar dapat membuka netacad, karena saat menggunakan jaringan NAT netacad tidak dapat diakses. Setelah dapat mengakses netacad, login menggunakan akun yang telah dibuat sebelumnya. Dilanjut dengan membuka file https menggunakan wireshark tool lalu filter tcp.port==443 (13 & 14)
