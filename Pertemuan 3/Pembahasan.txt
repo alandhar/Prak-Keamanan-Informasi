@@ -1,0 +1,55 @@
+Analisis Struktur Malware
+
+Jenis Malware antara lain : 
+
+1. Virus
+Virus memiliki cara kerja yang akan menduplikasi dirinya tanpa sepengetahuan. Virus memodifikasi program komputer dan memasukkan serangkaian kode. Virus komputer memiliki tujuan untuk menginfeksi dan merusak sistem yang mengakibatkan data atau aplikasi tersebut tidak bisa diakses atau bahkan hilang.
+2. Worm
+Worm merupakan malware yang memiliki cara kerja yang sama seperti virus namun memiliki tujuan berbeda dengan virus. Worm tidak menginfeksi data atau program, tapi dia akan menyalin dirinya untuk menyusupi komputer lainnya melalui jaringan yang bisa memberi beban pada sistem operasi komputer dan bandwith jaringan.
+3. Trojan
+Malware Trojan akan menyamar menjadi program yang sah atau valid untuk mengelabui pengguna. Trojan akan terus bersembunyi di komputer sampai pengguna membuka program tersebut. Trojan juga bisa menular ke perangkat yang lain melalui WiFi ketika ada salah satu device yang terinfeksi. 
+4. Ransomware
+Serangan malware yang dikirim peretas untuk mengunci dan mengenkripsi perangkat komputer milik korban. Ransomware akan menolak akses ke data atau sistem komputer sampai pengguna membayar uang tebusan.
+
+Pada praktikum ini menggunakan malware Trojan, sehingga saya akan membahas tentang Trojan. Trojan merupakan malware yang dapat menyamar baik menjadi file, software, link, bahkan email yang seolah-olah malware tersebut merupakan file yang aman. Selain menyamar sebagai program, sebuah komputer juga bisa terjangkit Trojan horse lewat social engineering atau rekayasa sosial.  Fortinet menuliskan bahwa taktik ini dijalankan para penjahat siber untuk memaksa pengguna mengunduh file berbahaya yang kerap disembunyikan di iklan pop-up ataupun tautan situs web. Malware Trojan ini memiliki format “.exe” namun malware ini tidak dapat bergerak sendiri, ia dikendalikan oleh hacker yang mengirimnya.
+
+Cara kerja Trojan cukup sederhana, yang mana malah membuat banyak orang terjebak pada malware ini. 
+1. Hacker mengirimkan pancingan kepada target. Panjingan yang digunakan tergantung kondisi, malware dapat menyamar menjadi file, software, atau link.
+2. Jika target terpancing, target akan membuka file malware Trojan yang mereka terima.
+3. Saat Trojan aktif, malware akan mengirimkan seluruh info yang diinginkan hacker.
+4. Hacker dapat mengendalikan sistem dan melakukan tindak kejahatan.
+5. Perangkat dan server yang terinfeksi dapat menularkan Trojan ke perangkat atau website lain yang saling terhubung.
+
+Jika perangkat saling terhubung baik melalui server maupun secara langsung malware Trojan dapat menginfeksi perangkat tersebut tanpa sepengetahuan pengguna. Dampaknya informasi yang terdapat pada perangkat ataupun server dapat dicuri oleh hacker yang menyebarkan malware ini. Sistem dapat dirusak, data dapat dihancurkan atau dihapus, komputer dapat diambil alih. 
+
+
+Praktikum Malware NJRAT
+
+njRAT (Remote Access Trojan) memiliki kemampuan untuk mencatat penekanan tombol, mengakses kamera, mencuri informasi data, mengunggah atau mengunduh file melalui perangkat lunak server Command & Control (CnC), penyerang memiliki kemampuan untuk membuat dan mengkonfigurasi malware untuk menyebar melalui drive USB atau sharing file. Malware Njrat dijalankan secara manual oleh pelaku untuk mengambil alih akses komputer target. Namun perlu diperhatikan jika komputer target mengaktifkan firewall file tidak akan berjalan atau tidak dapat digunakan. 
+
+Maka pada praktikum ini matikan terlebih dahulu semua firewall dan antivirus pada komputer agar dapat memulai praktikum. Langkah pertama untuk memulai praktikum yaitu install software Njrat melalui link yang sudah disediakan. Masuk pada software Njrat lalu diminta untuk memasukkan port, tuliskan 5520 sesuai modul (tidak diharuskan menggunakan 5520). Lalu masuk pada cmd ketikkan “ipconfig” untuk melihat IP Address yang digunakan komputer. Kembali ke Njrat, klik builder pada bagian kiri bawah untuk membuat file “.exe” dengan memasukkan IP Address komputer dan port yang digunakan. lalu simpan file tersebut.
+
+File tersebut yang digunakan untuk memberikan seluruh informasi dari komputer yang digunakan. Minta file pada komputer target agar komputer target dapat dihack. Buka file dari komputer target sehingga dapat diambil alih. Pada software Njrat terdapat beberapa tool untuk mendapatkan informasi dari komputer target yaitu dapat melihat file manager dari target dan aktivitas dari target menggunakan kamera. Tidak hanya itu pelaku dapat mengirimkan pesan pada target yang mana pesan tersebut tidak dapat dimatikan oleh target, hanya pelaku yang dapat mematikan tool pesan tersebut.
+
+Penyebaran  malware  tersebut  menggunakan  teknik social engineering  yaitu  teknik  yang  menggunakan kelemahan manusia,  sehingga user  tanpa curiga langsung mengeksekusi sebuah program yang dianggapnya baik-baik saja. Virus komputer dibuat dengan tujuan yang tidak baik yaitu  untuk  pencurian  data  pada  komputer  tanpa sepengetahuan dari pemiliknya. Banyak efek negatif yang ditimbulkan oleh virus komputer diantaranya rusaknya data dan  program pada  komputer  sehingga data  tersebut  tidak dapat  dibuka,  ataupun  program  yang  ada pada  komputer tidak dapat berjalan.
+
+
+Analisis Malware Dengan Metode OSINT
+
+Pada setiap scanner, dari file yang dideteksi file tersebut merupakan kategori malware Trojan. Sesuai dengan pembahasan sebelumnya njRAT merupakan Remote Access Trojan sehingga file tersebut sudah semestinya file Trojan. Pada hasil scanning file Trojan terdapat beberapa Trojan seperti Fileclab, NanoAV, DrWeb, Jiangmin dan lain-lain. Kebanyakan dari file Trojan tersebut berupa Trojan backdoor dan Trojan ransomware. Dari 14 ancaman yang ada pada file Trojan tersebut, dapat terdeteksi 10 ancaman yang merupakan malware dan file jahat. 
+
+Terdapat beberapa tindakan yang dapat dilakukan saat komputer sudah terkena malware khususnya Trojan antara lain yaitu : 
+1. Menghapus Trojan
+Jika Trojan terdeteksi di sistem komputer, tindakan pertama yang perlu dilakukan adalah menghapus Trojan tersebut. Bisa dilakukan dengan menggunakan program antivirus terbaru dan melakukan pemindaian penuh pada sistem.
+2. Memulihkan file yang terinfeksi
+Jika Trojan telah merusak atau mengenkripsi file pada sistem komputer, upaya perbaikan atau pemulihan file tersebut perlu dilakukan. Hal ini dapat meliputi penggunaan program khusus atau layanan pemulihan data profesional.
+3. Mengubah kata sandi
+Beberapa jenis Trojan, seperti Trojan banking, dapat mencuri informasi login dan kata sandi pengguna. Oleh karena itu, jika Trojan telah terdeteksi pada sistem komputer, sebaiknya segera mengubah kata sandi untuk akun yang mungkin terpengaruh.
+4. Memperbarui perangkat lunak dan sistem operasi
+Trojan dapat memanfaatkan kelemahan dalam sistem operasi atau perangkat lunak untuk masuk ke dalam sistem komputer. Oleh karena itu, pastikan selalu memperbarui perangkat lunak dan sistem operasi dengan patch keamanan terbaru.
+5. Backup data
+Untuk menghindari kehilangan data karena Trojan atau serangan malware lainnya, pastikan selalu membackup data secara teratur dan menyimpannya di tempat yang aman.
+6. Hindari sumber yang tidak terpercaya
+Untuk mencegah infeksi Trojan dan malware lainnya, hindari mengunduh program atau file dari sumber yang tidak diketahui atau tidak terpercaya.
+7. Konsultasi dengan ahli keamanan komputer
+Jika tidak yakin bagaimana melakukan tindakan yang diperlukan atau jika Trojan sangat sulit untuk dihapus, sebaiknya konsultasi dengan ahli keamanan komputer yang terpercaya.
