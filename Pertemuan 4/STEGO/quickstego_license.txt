@@ -1,0 +1,27 @@
+Every effort has been made to make this software as complete and as error free as possible, but no warranty of fitness is implied.
+
+The software is provided on an “as is” basis.
+
+The author and the distributor/publisher shall have neither liability nor responsibility to any person or entity with respect to loss or damages arising from the use/misuse of this software.
+
+By installing this software you are agreeing to be bound by the following:
+
+This software is copyrighted and all rights are reserved by the publisher and its licensers. 
+
+You may copy the software for backup or archival purposes only. Making copies of the software for any other purpose is a violation of United States and European copyright laws.
+
+THIS SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+YOU USE THIS SOFTWARE AT YOUR OWN RISK. THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, DAMAGES, LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING OR MISUSING THIS SOFTWARE. 
+
+Neither the publisher nor its dealers and distributors nor its licensers assume any liability for any alleged or actual damages arising from the use or misuse of this software.
+
+You may not copy, emulate, clone, rent, lease, sell, modify, decompile, disassemble or otherwise reverse engineer the program, except as provided for in this agreement.
+
+The entire contents of this software package and the compilation of the software are copyrighted by World Wide (including United States and European) copyright laws.
+
+Installing and using QuickStego signifies acceptance of the terms and conditions of this license.
+
+If you do not agree with the terms of this license you must remove QuickStego files from your storage devices and cease to use the product.
+
+THANK-YOU FOR CHOOSING QUICKSTEGO.
