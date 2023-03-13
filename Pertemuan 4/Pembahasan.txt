@@ -1,0 +1,26 @@
+Praktikum Staganografi
+
+Untuk praktikum pertama mempelajari Steganografi yang merupakan ilmu menuliskan pesan tersembunyi sedemikian rupa sehingga tidak ada seorang pun selain pengirim dan penerima yang menyadari ada pesan tersembunyi. Prinsip kerja dari Steganografi yaitu pesan yang akan disembunyikan akan disisipkan pada suatu media penampung seperti suara, video, atau gambar. Pada praktikum ini media yang digunakan yaitu gambar, pesan memerlukan sebuah kunci rahasia yang dinamakan stego-key agar hanyak pihak yang berhak saja yang dapat membuka atau mengekstak pesan rasahia tersebut.
+
+Software yang digunakan yaitu Quick Stego, memungkinkan pengguna untuk menyembunyikan pesan melalui media gambar. Penggunaan Quick Stego cukup mudah dengan menginstallnya terlebih dahulu lalu import gambar yang ingin digunakan dilanjutkan dengan menuliskan pesan yang ingin disembunyikan, terakhir simpan kembali gambar tersebut maka gambar baru itu terdapat pesan rahasia. 
+
+File md5sums (Message-Digest algortihm 5) berfungsi sebagai hash kriptografik untuk keperluan keamanan data (hingga saat ini masih banyak tabel “user” yang menggunakan MD5 untuk mengacak password agar tidak disimpan sebagai plaintext di database), dan bisa juga digunakan untuk mengecek integritas file. 
+
+
+Praktikum Analisis Log Server
+
+Selanjutnya yaitu menganalisis log server pada linux menggunakan VM CyberOps Workstation, yang dianalisis pada file log antara lain cat, more, less, dan tail. Tujuan dari log ini adalah untuk mengidentifikasi penyebab kesalahan sehingga dapat diperbaiki atau diatasi. Tidak semua kesalahan perlu diperbaiki atau diperbaiki. Jika kesalahan tersebut sebenarnya bukan kesalahan aplikasi, seperti kesalahan karena permintaan http yang dibuat memiliki permintaan dan menyebabkan kesalahan, maka kesalahan hanyalah informasi yang menjelaskan mengapa permintaan http gagal.
+
+Cat digunakan untuk melihat logs secara utuh, namun hal ini sangat tidak dianjurkan apabile file logs yang ingin buka sangatlah besar. Kelemahan menggunakan cat dengan file teks besar adalah perlu waktu untuk memulai dan banyak proses yang macet di terminal. Dan tentu saja, memproses file teks besar ini memiliki banyak informasi dan mungkin tidak cukup informasi untuk disortir. 
+
+More digunakan untuk menampilkan agar log yang ditampilkan lebih banyak. Kelemahan menggunakan more adalah memiliki keterbatasan yaitu hanya bisa scroll ke bawah, tidak ke atas, atau bisa dibilang tidak bisa membaca informasi sebelumnya.
+
+Less berfungsi untuk menampilkan logs dengan ada fitur halaman atau biasannya kita kenal dengan isitlah pagging. Ini mirip dengan perintah lainnya, tetapi memiliki fitur yang lebih canggih dan memungkinkan untuk bergerak maju dan mundur dalam sebuah file.
+
+Tail merupakan Perintah yang digunakan untuk membaca logs paling baru (paling bawah difile log tersebut). Perintah tail atau tail command akan menampilkan bagian terakhir (10 baris secara default) dari satu atau lebih file atau data yang disalurkan. Perintah ini juga dapat digunakan untuk memantau perubahan file secara real time. Perbedaan dari tail dengan tail -f adalah tail tanpa opsi memiliki fungsi untuk menampilkan 10 baris terakhir sedangkan perintah tail -f yang bertujuan untuk memantau file untuk perubahan karena -f berasal dari kata follow yang berguna untuk memonitor file log.
+
+File log dapat dijadikan dalam satu server agar lebih mudah dalam pemantauannya. Server syslog adalah server yang digunakan untuk menyimpan data syslog dari berbagai perangkat komputer dan jaringan terpusat. Syslog adalah kependekan dari log log sistem, yang merupakan protokol standar yang dapat digunakan untuk mengirim log sistem atau pesan peristiwa ke server tertentu. Gunakan perintah cat sebagai root untuk membuat daftar isi file. File ini menyimpan entri log yang dihasilkan oleh sistem operasi CyberOps Workstation VM dan dikirim ke layanan syslog. Untuk menjaga agar file syslog tetap kecil, sistem operasi secara berkala merotasi file log, mengganti nama file log lama menjadi syslog.1, syslog.2, dan seterusnya.
+
+Mengapa perintah cat harus dijalankan sebagai root? Karena perintah cat harus dijalankan sebagai root untuk membuat daftar isi file /var/log/syslog.1. File ini menyimpan entri log yang dihasilkan oleh sistem operasi CyberOps Workstation VM dan dikirim ke layanan syslog. Jelaskan kenapa harus mensinkronkan waktu dan tanggal komputer dengan benar? Karena pada komputer terdapat NTP ( Network Time Protocol) yang digunakan untuk menyinkronkan waktu dengan jam referensi standar internet melalui server NTP.
+
+Untuk melihat log journald, gunakan perintah journalctl. Alat journalctl menafsirkan dan menampilkan entri log yang sebelumnya disimpan dalam file log biner jurnal. Kelebihan menggunakan journalctl terletak pada banyaknya pilihan. Gunakan journalctl -b untuk menampilkan entri log yang direkam selama boot terakhir. Gunakan journalctl untuk menentukan layanan dan kerangka waktu untuk entri log. Lalu gunakan sakelar -k untuk hanya menampillkan pesan yang dihasilkan oleh kernel, dan gunakan -f untuk secara aktif mengikuti log saat sedang ditulis.
